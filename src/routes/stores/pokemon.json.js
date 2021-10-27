@@ -18,7 +18,3 @@ const loadedPokemon = data.results.map((data,index)=>{
 pokemon.set(loadedPokemon);
 }
 getPokemon(150);
-
-setTimeout(()=>{
-  getPokemon(5)
-},3000)

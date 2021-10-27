@@ -1,10 +1,12 @@
 <script>
 	import { page } from '$app/stores';
 
+	const id = Math.floor(Math.random() * 151) + 1;
+
 	const routes = [
 		{ href: '/', name: 'Home' },
 		{ href: '/about', name: 'About Me' },
-		{ href: '/contact', name: 'Pokemon' }
+		{ href: `/pokemon/${id}`, name: 'Pokemon' }
 	];
 </script>
 
@@ -22,7 +24,6 @@
 
 <style lang="scss">
 	nav {
-		height: 4rem;
 		border-bottom: 2px solid #000;
 	}
 	ul {
